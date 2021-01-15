@@ -1,5 +1,5 @@
-FROM --platform=${TARGETPLATFORM:-linux/amd64} ghcr.io/openfaas/classic-watchdog:0.1.4 as watchdog
-FROM --platform=${TARGETPLATFORM:-linux/amd64} python:3-alpine
+FROM --platform=${TARGETPLATFORM:-linux/amd64} registry1.cosmoplat.com/openfaas/ghcr-io-classic-watchdog:0.1.4
+FROM --platform=${TARGETPLATFORM:-linux/amd64} registry1.cosmoplat.com/openfaas/python:3-alpine
 
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM
